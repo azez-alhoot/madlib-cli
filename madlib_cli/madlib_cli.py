@@ -37,9 +37,11 @@ def merge():
     constant = parse()
     f2 =open("assets/madlip_cli_copy.txt",'+w')
     const2 = f2.write(constant.format(*ans))
+    f2.close()
     return const2
 merge()
 
 f3 =open("assets/madlip_cli_copy.txt",'r')
 const3 = f3.read()
+f3.close()
 print(const3)
